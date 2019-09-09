@@ -1,0 +1,119 @@
+{
+  "P1": {
+    "type": "Single family",
+    "image": "1.png",
+    "price": 548000,
+    "size": 2564,
+    "address": "4201 N Bank Rd NE, Millersport, OH 43046",
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "year": 1911,
+    "agent": {
+      "name": "Cat Everitt"
+    }
+  },
+  "P2": {
+    "type": "Single family",
+    "image": "2.png",
+    "price": 699900,
+    "size": 2072,
+    "address": "3528 Helendora Ave NE, Millersport, OH 43046",
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "year": 1929,
+    "agent": {
+      "name": "Marnita Swickard"
+    }
+  },
+  "P3": {
+    "type": "Single family",
+    "image": "3.png",
+    "price": 539500,
+    "size": 2838,
+    "address": "13028 W Bank Dr NE, Millersport, OH 43046",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "year": 2007,
+    "agent": {
+      "name": "Tammy Hendren"
+    }
+  },
+  "P4": {
+    "type": "Single family",
+    "image": "4.png",
+    "price": 2500000,
+    "size": 13679,
+    "address": "4270 State Route 309, Galion, OH 44833",
+    "bedrooms": 6,
+    "bathrooms": 6,
+    "year": 1949,
+    "agent": {
+      "name": "jan kanas"
+    }
+  },
+  "P5": {
+    "type": "Single family",
+    "image": "5.png",
+    "price": 899000,
+    "size": 5977,
+    "address": "208 Pheasant Run Pl, Findlay, OH 45840",
+    "bedrooms": 4,
+    "bathrooms": 6,
+    "year": 1999,
+    "agent": {
+      "name": "Scott Keller"
+    }
+  },
+  "P6": {
+    "type": "Single family",
+    "image": "6.png",
+    "price": 1150000,
+    "size": 4244,
+    "address": "25642 Lake Rd, Bay Village, OH 44140",
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "year": 2002,
+    "agent": {
+      "name": "Bill Spang"
+    }
+  },
+  "P7": {
+    "type": "Single family",
+    "image": "7.png",
+    "price": 895000,
+    "size": 4945,
+    "address": "410 Britannia Pkwy, Avon Lake, OH 44012",
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "year": 1989,
+    "agent": {
+      "name": "Ada Wiley"
+    }
+  },
+  "P8": {
+    "type": "Multi family",
+    "image": "8.png",
+    "price": 2090000,
+    "size": 5274,
+    "address": "266 S Mansfield Ave, Los Angeles, CA 90036",
+    "bedrooms": 8,
+    "bathrooms": 8,
+    "year": 1931,
+    "agent": {
+      "name": "Lisa Hutchins"
+    }
+  },
+  "P9": {
+    "type": "Condo",
+    "image": "9.png",
+    "price": 8775000,
+    "size": 2652,
+    "address": "35 Hudson Yards # 5404, New York, NY 10001",
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "year": 2019,
+    "agent": {
+      "name": "Hudson Yards"
+    }
+  }
+}

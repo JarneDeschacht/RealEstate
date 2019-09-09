@@ -1,0 +1,79 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+    font-size: 120%;
+  }
+.container {
+    width: 85%;
+    margin: 0 auto;
+    height: 100vh;
+    padding-top: 5%;
+  }
+  #properties {
+    background: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .like{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    opacity: 0.3;
+  }
+  .like:hover{
+    opacity: 1;
+  }
+  .like i{
+    color: red;
+  }
+  .property img {
+    width: 100%;
+    height: 250px;
+  }
+  .property{
+      margin: 5%;
+      cursor: pointer;
+  }
+  .property .bed-bath i{
+    color:blue;
+  }
+  .property .bed-bath{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 1.5% 0;
+      font-size: 1rem;
+      text-align: center;
+  }
+  .property .bed-bath strong{
+    padding: 0 2%;
+  }
+  .property .agent{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .property .agent h3{
+    margin: 0;
+    padding-top: 6%;
+  }
+  .property .uppercase-text{
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1%;
+  }
+  .property .address-text{
+    font-size: 0.8rem;
+    margin-bottom: 1%;
+  }
+  #navbar{
+    position: fixed;
+    width: 100%;
+    background-color: blue;
+    z-index: 1;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
