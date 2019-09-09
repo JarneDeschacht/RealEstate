@@ -20,7 +20,7 @@
 <body>
     <!--Navbar -->
     <nav class="mb-1 navbar navbar-expand-lg navbar-dark" id="navbar">
-        <a class="navbar-brand" href="#">REAL ESTATE APP</a>
+        <a class="navbar-brand" href="index">REAL ESTATE APP</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -28,33 +28,42 @@
             <ul class="navbar-nav ml-auto">
                 <li class="<?= $sActive == 'search' ? 'active nav-item' : 'nav-item'; ?>">
                     <a class="nav-link" href="index">
-                        <i class="fas fa-search"></i>Search
+                        <i class="fas fa-search"></i>Search Property
                     </a>
-                </li>
-                <li class="<?= $sActive == 'add' ? 'active nav-item' : 'nav-item'; ?>">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-plus"></i>Add Property
-                    </a>
-
                 </li>
                 <?php
                 session_start();
+                $sClass = $sActive == 'login' ? 'active nav-item' : 'nav-item';
                 if (!$_SESSION) {
-                    $sClass = $sActive == 'login' ? 'active nav-item' : 'nav-item';
                     echo '<li class="' . $sClass . '">
                     <a class="nav-link" href="login">
                         <i class="fas fa-sign-in-alt"></i>Login
                     </a>
                     </li>';
                 } else {
-                    echo '<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user"></i> '.$_SESSION['jUser']->firstname.' </a>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                        <a class="dropdown-item" href="#">My account</a>
-                        <a class="dropdown-item" href="api/api-logout.php">Log out</a>
-                    </div>
-                </li>';
+                    $jUser = $_SESSION['jUser'];
+
+                    if ($jUser->role === 'agent') {
+                        echo '
+                        <li class="' . $sClass . '">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-plus"></i>Add Property
+                            </a>
+                        </li>';
+                    }
+
+                    
+                    echo '
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i> ' . $jUser->firstname . ' </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
+                            <a class="dropdown-item" href="#">My Account</a>
+                            <a class="dropdown-item" href="api/api-logout.php">Log out</a>
+                        </div>
+                    </li>';
+
+                    
                 }
                 ?>
             </ul>

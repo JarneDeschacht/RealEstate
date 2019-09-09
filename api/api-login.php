@@ -11,7 +11,7 @@ if (!filter_var($_POST['txtEmail'], FILTER_VALIDATE_EMAIL)) {
     sendErrorMessage('The mail has not the correct format', __line__);
 }
 
-$sjUsers = file_get_contents(__DIR__ . '/../data/users.json');
+$sjUsers = file_get_contents(__DIR__ . '/../data.json');
 $jUsers = json_decode($sjUsers);
 
 foreach ($jUsers as $jUser) {
