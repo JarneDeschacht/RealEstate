@@ -1,17 +1,14 @@
 <?php
 session_start();
-if ($_SESSION) {
-    header('Location: ../index');
-}
 
 if (empty($_POST['txtEmail'])) {
-    sendErrorMessage('email address missing', __LINE__);
+    sendErrorMessage('E-mail is missing', __LINE__);
 }
 if (empty($_POST['txtPassword'])) {
-    sendErrorMessage('password missing', __LINE__);
+    sendErrorMessage('Password is missing', __LINE__);
 }
 if (!filter_var($_POST['txtEmail'], FILTER_VALIDATE_EMAIL)) {
-    sendErrorMessage('the mail has not the correct format', __line__);
+    sendErrorMessage('The mail has not the correct format', __line__);
 }
 
 $sjUsers = file_get_contents(__DIR__ . '/../data/users.json');
@@ -21,11 +18,19 @@ foreach ($jUsers as $jUser) {
     if ($jUser->email === $_POST['txtEmail']) {
         if ($jUser->password === $_POST['txtPassword']) {
             $_SESSION['jUser'] = $jUser;
-            header('Location: ../index');
+            echo '{
+                "status": 1,
+                "message": "login succesfull"
+            }';
             exit;
         }
     }
 }
+echo '{
+    "status": 0,
+    "message": "combination of email and password incorrect"
+}';
+exit;
 
 function sendErrorMessage($sMessage,  $iLine)
 {
