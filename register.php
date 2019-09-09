@@ -37,7 +37,7 @@ require_once(__DIR__ . '/components/top.php');
 
         <div class="text-center">
             <p>Already have an account?
-                <a href="login.php">Login</a>
+                <a href="login">Login</a>
             </p>
         </div>
     </form>
