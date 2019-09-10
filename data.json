@@ -125,9 +125,19 @@
         "firstname": "Jarne",
         "lastname": "Deschacht",
         "email": "mailtest.kea@gmail.com",
-        "password": "5d77cbdd2e4f2",
+        "password": "testtest1",
         "phonenumber": "0492554616",
         "role": "agent",
+        "properties": {}
+    },
+    "5d77cf4c995f2": {
+        "id": "5d77cf4c995f2",
+        "firstname": "a",
+        "lastname": "a",
+        "email": "a.a@a.com",
+        "password": "testtest123",
+        "phonenumber": "a",
+        "role": "user",
         "properties": {}
     }
 }

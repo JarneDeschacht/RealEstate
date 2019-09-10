@@ -46,7 +46,7 @@
                     if ($jUser->role === 'agent') {
                         echo '
                         <li class="' . $sClass . '">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="add-property">
                                 <i class="fas fa-plus"></i>Add Property
                             </a>
                         </li>';
