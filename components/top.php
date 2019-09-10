@@ -52,18 +52,16 @@
                         </li>';
                     }
 
-                    
+                    $sClass = $sActive == 'account' ? 'active nav-item' : 'nav-item';
                     echo '
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown ' . $sClass . '">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-user"></i> ' . $jUser->firstname . ' </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
-                            <a class="dropdown-item" href="#">My Account</a>
+                            <a class="dropdown-item" href="account">My Account</a>
                             <a class="dropdown-item" href="api/api-logout.php">Log out</a>
                         </div>
                     </li>';
-
-                    
                 }
                 ?>
             </ul>

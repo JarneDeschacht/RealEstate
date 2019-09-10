@@ -38,6 +38,9 @@
   .like:hover{
     opacity: 1;
   }
+  .opacity{
+    opacity: 1;
+  }
   .like i{
     color: red;
   }
@@ -79,7 +82,7 @@
     font-size: 0.8rem;
     margin-bottom: 1%;
   }
-/*----- FORMS -----*/
+/*----- LOGIN/REGISTER -----*/
 form{
   width: 50%;
   margin: 5% auto;
@@ -106,4 +109,11 @@ form .form-control:focus {
 .custom-control-input:focus{
   border-color: blue;
   box-shadow: none;
+}
+/*----- ACCOUNT -----*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background-color: blue;
+}
+.subnav-profile a{
+  color:blue;
 }

@@ -7,8 +7,14 @@ require_once(__DIR__ . '/components/top.php');
 <div class="container">
     <form id="formLogin" method="POST" class="text-center border border-light p-5">
         <h1 class="mb-4">Sign in</h1>
-        <input type="email" class="form-control mb-4" placeholder="E-mail" name="txtEmail">
-        <input type="password" class="form-control mb-4" placeholder="Password" name="txtPassword">
+        <div class="md-form mt-0">
+            <input type="email" id="txtEmail" class="form-control mb-4" name="txtEmail">
+            <label for="txtEmail">E-mail</label>
+        </div>
+        <div class="md-form mt-0">
+            <input type="password" class="form-control mb-4" name="txtPassword">
+            <label for="txtPassword">Password</label>
+        </div>
         <p id="lblErrorsLogin"></p>
         <div class="d-flex justify-content-around">
             <div>

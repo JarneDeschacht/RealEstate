@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 if (empty($_POST['txtEmail'])) {
     sendErrorMessage('E-mail is missing', __LINE__);
@@ -17,10 +16,11 @@ $jUsers = json_decode($sjUsers);
 foreach ($jUsers as $jUser) {
     if ($jUser->email === $_POST['txtEmail']) {
         if ($jUser->password === $_POST['txtPassword']) {
+            session_start();
             $_SESSION['jUser'] = $jUser;
             echo '{
                 "status": 1,
-                "message": "login succesfull"
+                "message": "login succesful"
             }';
             exit;
         }

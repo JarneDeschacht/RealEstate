@@ -1,14 +1,6 @@
 function like(key) {
-    $('#' + key).children().first().children().first().removeClass('far');
-    $('#' + key).children().first().children().first().addClass('fas');
-    $('#' + key).children().first().css('opacity', '1');
-    $('#' + key).children().first().attr("onclick", "dislike(\'" + key + "\')");
-}
-function dislike(key) {
-    $('#' + key).children().first().children().first().removeClass('fas');
-    $('#' + key).children().first().children().first().addClass('far');
-    $('#' + key).children().first().css('opacity', '0.3');
-    $('#' + key).children().first().attr("onclick", "like(\'" + key + "\')");
+    $('#' + key).children().first().children().first().toggleClass('fas');
+    $('#' + key).children().first().toggleClass('opacity');
 }
 
 $('#btnLogin').click(function () {
@@ -24,8 +16,27 @@ $('#btnLogin').click(function () {
             }
             else {
                 $('#lblErrorsLogin').text(response.message);
-                $('#lblErrorsLogin').css('color','red');
-                $('#lblErrorsLogin').css('font-weight','900');
+                $('#lblErrorsLogin').css('color', 'red');
+                $('#lblErrorsLogin').css('font-weight', '900');
+            }
+        })
+})
+
+$('#btnRegister').click(function () {
+    $.ajax({
+        url: "api/api-register.php",
+        method: "POST",
+        data: $('#formRegister').serialize(),
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            if (response.status === 1) {
+                window.location.pathname = '/Real-Estate-Project/index';
+            }
+            else {
+                $('#lblErrorsRegister').text(response.message);
+                $('#lblErrorsRegister').css('color', 'red');
+                $('#lblErrorsRegister').css('font-weight', '900');
             }
         })
 })

@@ -107,5 +107,41 @@
         "phonenumber": "0492554616",
         "role": "user",
         "properties": {}
+    },
+    "5d7753b622919": {
+        "firstname": "test",
+        "lastname": "test",
+        "email": "test@test.be",
+        "password": "testtest1",
+        "phonenumber": "1212121",
+        "role": "user",
+        "properties": {}
+    },
+    "5d7754326bfc8": {
+        "firstname": "haha",
+        "lastname": "haha",
+        "email": "haha@haha.dk",
+        "password": "testtest1",
+        "phonenumber": "0492554616",
+        "role": "user",
+        "properties": {}
+    },
+    "5d7754539cbcc": {
+        "firstname": "a",
+        "lastname": "a",
+        "email": "a@a.com",
+        "password": "testtest1",
+        "phonenumber": "a",
+        "role": "agent",
+        "properties": {}
+    },
+    "5d777d52dfebb": {
+        "firstname": "a",
+        "lastname": "aa",
+        "email": "a.a@sd.d",
+        "password": "testtest1",
+        "phonenumber": "\u00e9&\u00e9",
+        "role": "agent",
+        "properties": {}
     }
 }
