@@ -1,5 +1,6 @@
 {
     "U1": {
+        "id": "U1",
         "firstname": "Jarne",
         "lastname": "Deschacht",
         "email": "jarne.deschacht@gmail.com",
@@ -100,6 +101,7 @@
         }
     },
     "U2": {
+        "id": "U2",
         "firstname": "Ime",
         "lastname": "Van Daele",
         "email": "imvd@gmail.com",
@@ -108,39 +110,13 @@
         "role": "user",
         "properties": {}
     },
-    "5d7753b622919": {
-        "firstname": "test",
+    "5d7783eeec995": {
+        "id": "5d7783eeec995",
+        "firstname": "jarne",
         "lastname": "test",
-        "email": "test@test.be",
-        "password": "testtest1",
-        "phonenumber": "1212121",
-        "role": "user",
-        "properties": {}
-    },
-    "5d7754326bfc8": {
-        "firstname": "haha",
-        "lastname": "haha",
-        "email": "haha@haha.dk",
-        "password": "testtest1",
-        "phonenumber": "0492554616",
-        "role": "user",
-        "properties": {}
-    },
-    "5d7754539cbcc": {
-        "firstname": "a",
-        "lastname": "a",
-        "email": "a@a.com",
-        "password": "testtest1",
-        "phonenumber": "a",
-        "role": "agent",
-        "properties": {}
-    },
-    "5d777d52dfebb": {
-        "firstname": "a",
-        "lastname": "aa",
-        "email": "a.a@sd.d",
-        "password": "testtest1",
-        "phonenumber": "\u00e9&\u00e9",
+        "email": "jarne.deschacht@gmail.be",
+        "password": "testtest123",
+        "phonenumber": "1121",
         "role": "agent",
         "properties": {}
     }

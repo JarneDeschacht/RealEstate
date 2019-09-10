@@ -10,13 +10,13 @@ $jUser = $_SESSION['jUser'];
 <div class="container">
     <ul class="nav nav-pills nav-justified mb-3 subnav-profile" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="pills-editProfile-tab" data-toggle="pill" href="#pills-editProfile" role="tab" aria-controls="pills-editProfile" aria-selected="true">Edit Profile</a>
+            <a class="nav-link active" onclick="resetLabels()" id="pills-editProfile-tab" data-toggle="pill" href="#pills-editProfile" role="tab" aria-controls="pills-editProfile" aria-selected="true">Edit Profile</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-change-password-tab" data-toggle="pill" href="#pills-change-password" role="tab" aria-controls="pills-change-password" aria-selected="false">Change Password</a>
+            <a class="nav-link" onclick="resetLabels()" id="pills-change-password-tab" data-toggle="pill" href="#pills-change-password" role="tab" aria-controls="pills-change-password" aria-selected="false">Change Password</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="pills-delete-account-tab" data-toggle="pill" href="#pills-delete-account" role="tab" aria-controls="pills-delete-account" aria-selected="false">Delete Account</a>
+            <a class="nav-link" onclick="resetLabels()" id="pills-delete-account-tab" data-toggle="pill" href="#pills-delete-account" role="tab" aria-controls="pills-delete-account" aria-selected="false">Delete Account</a>
         </li>
     </ul>
     <div class="tab-content pt-2 pl-1" id="pills-tabContent">
@@ -74,6 +74,11 @@ $jUser = $_SESSION['jUser'];
                     </div>
                 </div>
                 <p id="lblErrorsChangePassword"></p>
+                <div class="d-flex justify-content-around">
+                    <div>
+                        <a href="">Forgot password?</a>
+                    </div>
+                </div>
                 <button id="btnChangePassword" class="btn my-4 btn-block button-form" type="button">Save</button>
             </form>
         </div>

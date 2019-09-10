@@ -41,7 +41,9 @@ if (empty($_POST['rdbType'])) {
     sendErrorMessage('Please choose a type', __LINE__);
 }
 
+$uniqueId = uniqid();
 $jNewUser = new stdClass();
+$jNewUser->id = $uniqueId;
 $jNewUser->firstname = $_POST['txtFirstname'];
 $jNewUser->lastname = $_POST['txtLastname'];
 $jNewUser->email = $_POST['txtEmail'];
@@ -49,7 +51,7 @@ $jNewUser->password = $_POST['txtPassword'];
 $jNewUser->phonenumber = $_POST['txtPhone'];
 $jNewUser->role = $_POST['rdbType'];
 $jNewUser->properties = new stdClass();
-$uniqueId = uniqid();
+
 
 $jData->$uniqueId = $jNewUser;
 
