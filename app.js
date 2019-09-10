@@ -7,6 +7,11 @@ function resetLabels() {
     $('#lblErrorsChangePassword').text('');
 }
 
+$('#btnSendEmail').click(function () {
+    const email = $('#txtSendEmail').val();
+    window.location = '/Real-Estate-Project/api/api-send-email?email=' + email;
+})
+
 $('#btnLogin').click(function () {
     $.ajax({
         url: "api/api-login.php",
@@ -61,6 +66,26 @@ $('#btnEditProfile').click(function () {
             else {
                 $('#lblErrorsEditProfile').text(response.message);
                 $('#lblErrorsEditProfile').css('color', 'red');
+            }
+        })
+})
+
+$('#btnChangePassword').click(function () {
+    $.ajax({
+        url: "api/api-change-password.php",
+        method: "POST",
+        data: $('#formChangePassword').serialize(),
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            $('#lblErrorsChangePassword').css('font-weight', '900');
+            if (response.status === 1) {
+                $('#lblErrorsChangePassword').text(response.message);
+                $('#lblErrorsChangePassword').css('color', 'green');
+            }
+            else {
+                $('#lblErrorsChangePassword').text(response.message);
+                $('#lblErrorsChangePassword').css('color', 'red');
             }
         })
 })

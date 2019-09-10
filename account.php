@@ -10,7 +10,7 @@ $jUser = $_SESSION['jUser'];
 <div class="container">
     <ul class="nav nav-pills nav-justified mb-3 subnav-profile" id="pills-tab" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" onclick="resetLabels()" id="pills-editProfile-tab" data-toggle="pill" href="#pills-editProfile" role="tab" aria-controls="pills-editProfile" aria-selected="true">Edit Profile</a>
+            <a class="nav-link active" onclick="resetLabels()" id="pills-editProfile-tab" data-toggle="pill" href="#pills-editProfile" role="tab" aria-controls="pills-editProfile" aria-selected="true">Edit Personal Data</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" onclick="resetLabels()" id="pills-change-password-tab" data-toggle="pill" href="#pills-change-password" role="tab" aria-controls="pills-change-password" aria-selected="false">Change Password</a>
@@ -22,7 +22,7 @@ $jUser = $_SESSION['jUser'];
     <div class="tab-content pt-2 pl-1" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-editProfile" role="tabpanel" aria-labelledby="pills-editProfile-tab">
             <form id="formEditProfile" class="text-center border border-light p-5" method="POST">
-                <h1 class="mb-4">Edit Profile</h1>
+                <h1 class="mb-4">Edit Personal Data</h1>
                 <div class="form-row">
                     <div class="col">
                         <div class="md-form">
@@ -53,13 +53,13 @@ $jUser = $_SESSION['jUser'];
             <form id="formChangePassword" class="text-center border border-light p-5" method="POST">
                 <h1 class="mb-4">Change Password</h1>
                 <div class="md-form mt-0">
-                    <input type="password" id="txtCurrentPassword" class="form-control">
+                    <input type="password" id="txtCurrentPassword" class="form-control" name="txtCurrentPassword">
                     <label for="txtCurrentPassword">Current Password</label>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <div class="md-form">
-                            <input type="password" id="txtNewPassword" class="form-control">
+                            <input type="password" id="txtNewPassword" class="form-control" name="txtNewPassword">
                             <label for="txtNewPassword">New Password</label>
                             <small class="form-text text-muted mb-4">
                                 At least 8 characters and 1 digit
@@ -68,22 +68,19 @@ $jUser = $_SESSION['jUser'];
                     </div>
                     <div class="col">
                         <div class="md-form">
-                            <input type="password" id="txtNewPasswordConfirm" class="form-control">
+                            <input type="password" id="txtNewPasswordConfirm" class="form-control" name="txtNewPasswordConfirm">
                             <label for="txtNewPasswordConfirm">New Password Confirm</label>
                         </div>
                     </div>
                 </div>
                 <p id="lblErrorsChangePassword"></p>
-                <div class="d-flex justify-content-around">
-                    <div>
-                        <a href="">Forgot password?</a>
-                    </div>
-                </div>
                 <button id="btnChangePassword" class="btn my-4 btn-block button-form" type="button">Save</button>
             </form>
         </div>
         <div class="tab-pane fade" id="pills-delete-account" role="tabpanel" aria-labelledby="pills-delete-account-tab">
-
+            <h2 class="title-delete">You may delete your account at any time. However, this action is irreversible.</h2>
+            <a data-toggle="modal" data-target="#modalConfirmDelete" class="btn mx-auto btn-delete-account">i understand, Delete my account</a>
+            <?php require_once(__DIR__ . '/components/delete-confirm-modal.php') ?>
         </div>
     </div>
 </div>

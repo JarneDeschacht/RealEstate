@@ -18,8 +18,9 @@ require_once(__DIR__ . '/components/top.php');
         <p id="lblErrorsLogin"></p>
         <div class="d-flex justify-content-around">
             <div>
-                <a href="">Forgot password?</a>
+                <a data-toggle="modal" data-target="#modelSendEmail">Forgot password?</a>
             </div>
+            <?php require_once(__DIR__ . '/components/forgot-password-modal.php'); ?>
         </div>
         <button id="btnLogin" type="button" class="btn btn-block my-4 button-form">Sign in</button>
         <p>Not a member?

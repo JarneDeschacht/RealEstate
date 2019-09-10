@@ -42,7 +42,7 @@ require_once(__DIR__ . '/components/top.php');
             <div class="col">
                 <div class="md-form">
                     <input type="password" id="txtPasswordConfirm" name="txtPasswordConfirm" class="form-control">
-                    <label for="txtPasswordConfirm">New Password Confirm</label>
+                    <label for="txtPasswordConfirm">Password Confirm</label>
                 </div>
             </div>
         </div>

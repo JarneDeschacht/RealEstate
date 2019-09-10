@@ -110,13 +110,23 @@
         "role": "user",
         "properties": {}
     },
-    "5d7783eeec995": {
-        "id": "5d7783eeec995",
-        "firstname": "jarne",
-        "lastname": "test",
-        "email": "jarne.deschacht@gmail.be",
-        "password": "testtest123",
-        "phonenumber": "1121",
+    "5d77b97be1294": {
+        "id": "5d77b97be1294",
+        "firstname": "a",
+        "lastname": "a",
+        "email": "a@a.com",
+        "password": "testtest1",
+        "phonenumber": "a",
+        "role": "user",
+        "properties": {}
+    },
+    "5d77cbc52c5af": {
+        "id": "5d77cbc52c5af",
+        "firstname": "Jarne",
+        "lastname": "Deschacht",
+        "email": "mailtest.kea@gmail.com",
+        "password": "5d77cbdd2e4f2",
+        "phonenumber": "0492554616",
         "role": "agent",
         "properties": {}
     }

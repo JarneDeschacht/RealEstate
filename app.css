@@ -17,12 +17,11 @@
   #navbar{
     position: fixed;
     width: 100%;
-    background-color: blue;
+    background-color: #007bff;;
     z-index: 1;
     padding-left: 7%;
     padding-right: 7%;
   }
-
 /*----- PROPERTIES -----*/
   #properties {
     background: white;
@@ -42,7 +41,7 @@
     opacity: 1;
   }
   .like i{
-    color: red;
+    color:#ff3547;
   }
   .property img {
     width: 100%;
@@ -53,7 +52,7 @@
       cursor: pointer;
   }
   .property .bed-bath i{
-    color:blue;
+    color:#007bff;;
   }
   .property .bed-bath{
       display: grid;
@@ -88,7 +87,7 @@ form{
   margin: 5% auto;
 }
 form .button-form{
-  background-color: blue ;
+  background-color: #007bff; ;
   color: white;
   margin: 0;
 }
@@ -96,24 +95,43 @@ form .button-form:hover{
   color:white;
 }
 form a{
-  color: blue;
+  color: #007bff;;
+}
+a:not([href]):not([tabindex]), a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover{
+  color: #007bff;;
 }
 form .form-control:focus {
-  border-color: blue;
+  border-color: #007bff;;
   box-shadow: none;
 }
 .custom-control-input:checked~.custom-control-label::before{
-  border-color: blue;
-  background-color: blue;
+  border-color: #007bff;;
+  background-color: #007bff;;
 }
 .custom-control-input:focus{
-  border-color: blue;
+  border-color: #007bff;;
   box-shadow: none;
 }
 /*----- ACCOUNT -----*/
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  background-color: blue;
-}
+
 .subnav-profile a{
-  color:blue;
+  color:#007bff;;
+}
+.title-delete{
+  margin-top: 12%;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.btn-delete-account{
+  margin: 5% auto;
+  background-color: #ff3547;
+  color: white;
+  width: 40%;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  display: block !important;
+}
+.btn-delete-account:hover{
+  color:white;
 }
