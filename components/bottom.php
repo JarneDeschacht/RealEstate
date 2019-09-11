@@ -7,6 +7,8 @@
 <script type="text/javascript" src="MDBootstrap/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="MDBootstrap/js/mdb.min.js"></script>
+<!-- MDBootstrap Datatables  -->
+<script type="text/javascript" src="MDBootstrap/js/addons/datatables.min.js"></script>
 <!-- APP-->
 <script src="app.js"></script>
 </body>

@@ -173,3 +173,20 @@ form .form-control:focus {
 .fileUpload{
   text-align: left;
 }
+/*----- MANAGE PROPERTIES -----*/
+.pagination .page-item.active .page-link{
+  background-color: #007bff;
+}
+.thead{
+  background-color:#007bff;
+  color:white;
+}
+.edit-delete i{
+  padding:1%;
+  color: #007bff !important;
+  transition-duration: .2s;
+}
+.edit-delete i:hover{
+  transition-duration: .5s;
+  color: black !important;
+}

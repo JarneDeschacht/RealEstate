@@ -15,6 +15,8 @@
     <link href="MDBootstrap/css/style.css" rel="stylesheet">
     <!-- MAPBOX -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- MDBootstrap Datatables  -->
+    <link href="MDBootstrap/css/addons/datatables.min.css" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
 
     <title>Real Estate - <?= $sPageTitle; ?></title>
@@ -57,13 +59,15 @@
                     }
 
                     $sClass = $sActive == 'account' ? 'active nav-item' : 'nav-item';
+                    $sAgent = $jUser->role === 'agent' ? '<a class="dropdown-item" href="manage-properties">My Properties</a>' : '';
                     echo '
                     <li class="nav-item dropdown ' . $sClass . '">
                         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <i class="fas fa-user"></i> ' . $jUser->firstname . ' </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-4">
                             <a class="dropdown-item" href="account">My Account</a>
-                            <a class="dropdown-item" href="api/api-logout.php">Log out</a>
+                            ' . $sAgent . '
+                            <a class="dropdown-item" href="api/api-logout.php">Log Out</a>
                         </div>
                     </li>';
                 }

@@ -1,3 +1,8 @@
+$(document).ready(function () {
+    $('#dtBasicExample').DataTable();
+    $('.dataTables_length').addClass('bs-select');
+});
+
 function like(key) {
     $('#Right' + key).children().first().children().first().toggleClass('fas');
     $('#Right' + key).children().first().toggleClass('opacity');
@@ -114,3 +119,17 @@ $('#btnAddProperty').click(function (e) {
             }
         })
 })
+
+function deleteProperty(key) {
+    $.ajax({
+        url: "api/api-delete-property.php",
+        method: "GET",
+        data: { "id": key },
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            if (response.status === 1) {
+                $('#' + key).remove();
+            }
+        })
+}
