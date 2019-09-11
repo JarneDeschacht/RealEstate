@@ -43,7 +43,7 @@ $jLocation->housenumber = $sHouseNumber;
 $jLocation->zipcode = $sZipcode;
 $jLocation->state = $sState;
 $jLocation->city = $sCity;
-$jLocation->coordinates = [$nLongitude, $nLatitude];
+$jLocation->coordinates = [$nLatitude, $nLongitude];
 
 $jNewProperty = new stdClass();
 $jNewProperty->type = $sType;

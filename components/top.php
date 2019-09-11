@@ -13,7 +13,10 @@
     <link href="MDBootstrap/css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="MDBootstrap/css/style.css" rel="stylesheet">
+    <!-- MAPBOX -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="app.css">
+
     <title>Real Estate - <?= $sPageTitle; ?></title>
 </head>
 

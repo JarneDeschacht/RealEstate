@@ -21,8 +21,8 @@
                     "state": "OH",
                     "city": "Millersport",
                     "coordinates": [
-                        0,
-                        0
+                        12.505212,
+                        55.714502
                     ]
                 },
                 "bedrooms": 4,
@@ -42,8 +42,8 @@
                     "state": "OH",
                     "city": "Millersport",
                     "coordinates": [
-                        0,
-                        0
+                        12.564767,
+                        55.701515
                     ]
                 },
                 "bedrooms": 2,
@@ -63,8 +63,8 @@
                     "state": "OH",
                     "city": "Millersport",
                     "coordinates": [
-                        0,
-                        0
+                        12.563898,
+                        55.685476
                     ]
                 },
                 "bedrooms": 4,
@@ -84,8 +84,8 @@
                     "state": "OH",
                     "city": "Galion",
                     "coordinates": [
-                        0,
-                        0
+                        12.565643,
+                        55.71576
                     ]
                 },
                 "bedrooms": 6,
@@ -105,8 +105,8 @@
                     "state": "OH",
                     "city": "Findlay",
                     "coordinates": [
-                        0,
-                        0
+                        12.574581,
+                        55.679932
                     ]
                 },
                 "bedrooms": 4,
@@ -126,8 +126,8 @@
                     "state": "OH",
                     "city": "Bay Village",
                     "coordinates": [
-                        0,
-                        0
+                        12.594691,
+                        55.676392
                     ]
                 },
                 "bedrooms": 4,
@@ -147,8 +147,8 @@
                     "state": "OH",
                     "city": "Avon Lake",
                     "coordinates": [
-                        0,
-                        0
+                        12.58134,
+                        55.686179
                     ]
                 },
                 "bedrooms": 4,
@@ -168,8 +168,8 @@
                     "state": "CA",
                     "city": "Los Angeles",
                     "coordinates": [
-                        0,
-                        0
+                        12.582563,
+                        55.670276
                     ]
                 },
                 "bedrooms": 8,
@@ -189,8 +189,8 @@
                     "state": "NY",
                     "city": "New York",
                     "coordinates": [
-                        0,
-                        0
+                        12.540737,
+                        55.687474
                     ]
                 },
                 "bedrooms": 3,
@@ -245,13 +245,38 @@
                     "state": "WL",
                     "city": "Bekegem",
                     "coordinates": [
-                        51.158409,
-                        3.04165
+                        12.520459,
+                        55.674878
                     ]
                 },
                 "bedrooms": 3,
                 "bathrooms": 1,
                 "year": 2000
+            },
+            "5d792293f2b52": {
+                "type": "ede",
+                "frontImage": "5d792293f2b64.jpg",
+                "images": [
+                    "5d792293f2b64.jpg",
+                    "5d792293f2d9e.jpg",
+                    "5d792293f2fa2.jpg"
+                ],
+                "price": 3,
+                "size": 3,
+                "location": {
+                    "street": "test",
+                    "housenumber": "tetst",
+                    "zipcode": "test",
+                    "state": "tst",
+                    "city": "test",
+                    "coordinates": [
+                        12.597668,
+                        55.691816
+                    ]
+                },
+                "bedrooms": 3,
+                "bathrooms": 3,
+                "year": 4
             }
         }
     },

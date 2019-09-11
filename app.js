@@ -1,6 +1,6 @@
 function like(key) {
-    $('#' + key).children().first().children().first().toggleClass('fas');
-    $('#' + key).children().first().toggleClass('opacity');
+    $('#Right' + key).children().first().children().first().toggleClass('fas');
+    $('#Right' + key).children().first().toggleClass('opacity');
 }
 function resetLabels() {
     $('#lblErrorsEditProfile').text('');

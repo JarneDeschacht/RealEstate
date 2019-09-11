@@ -1,0 +1,192 @@
+{
+    "P1": {
+        "type": "Single family",
+        "frontImage": "1.png",
+        "images": [],
+        "price": 548000,
+        "size": 2564,
+        "location": {
+            "street": "N Bank Rd NE",
+            "housenumber": "4201",
+            "zipcode": "43046",
+            "state": "OH",
+            "city": "Millersport",
+            "coordinates": [
+                12.505212,
+                55.714502
+            ]
+        },
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "year": 1911
+    },
+    "P2": {
+        "type": "Single family",
+        "frontImage": "2.png",
+        "images": [],
+        "price": 699900,
+        "size": 2072,
+        "location": {
+            "street": "Helendora Ave NE",
+            "housenumber": "3528",
+            "zipcode": "43046",
+            "state": "OH",
+            "city": "Millersport",
+            "coordinates": [
+                12.484102,
+                55.705227
+            ]
+        },
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "year": 1929
+    },
+    "P3": {
+        "type": "Single family",
+        "frontImage": "3.png",
+        "images": [],
+        "price": 539500,
+        "size": 2838,
+        "location": {
+            "street": "N Bank Rd NE",
+            "housenumber": "13028",
+            "zipcode": "43046",
+            "state": "OH",
+            "city": "Millersport",
+            "coordinates": [
+                12.563898,
+                55.685476
+            ]
+        },
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "year": 2007
+    },
+    "P4": {
+        "type": "Single family",
+        "frontImage": "4.png",
+        "images": [],
+        "price": 2500000,
+        "size": 13679,
+        "location": {
+            "street": "State Route 309",
+            "housenumber": "4270",
+            "zipcode": "43046",
+            "state": "OH",
+            "city": "Galion",
+            "coordinates": [
+                12.565643,
+                55.715760
+            ]
+        },
+        "bedrooms": 6,
+        "bathrooms": 6,
+        "year": 1949
+    },
+    "P5": {
+        "type": "Single family",
+        "frontImage": "5.png",
+        "images": [],
+        "price": 899000,
+        "size": 5977,
+        "location": {
+            "street": "Pheasant Run Pl",
+            "housenumber": "208",
+            "zipcode": "45840",
+            "state": "OH",
+            "city": "Findlay",
+            "coordinates": [
+                12.574581,
+                55.679932
+            ]
+        },
+        "bedrooms": 4,
+        "bathrooms": 6,
+        "year": 1999
+    },
+    "P6": {
+        "type": "Single family",
+        "frontImage": "6.png",
+        "images": [],
+        "price": 1150000,
+        "size": 4244,
+        "location": {
+            "street": "Lake Rd",
+            "housenumber": "25642",
+            "zipcode": "44140",
+            "state": "OH",
+            "city": "Bay Village",
+            "coordinates": [
+                12.594691,
+                55.676392
+            ]
+        },
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "year": 2002
+    },
+    "P7": {
+        "type": "Single family",
+        "frontImage": "7.png",
+        "images": [],
+        "price": 895000,
+        "size": 4945,
+        "location": {
+            "street": "Britannia Pkwy",
+            "housenumber": "410",
+            "zipcode": "44012",
+            "state": "OH",
+            "city": "Avon Lake",
+            "coordinates": [
+                12.581340,
+                55.686179
+            ]
+        },
+        "bedrooms": 4,
+        "bathrooms": 5,
+        "year": 1989
+    },
+    "P8": {
+        "type": "Multi family",
+        "frontImage": "8.png",
+        "images": [],
+        "price": 2090000,
+        "size": 5274,
+        "location": {
+            "street": "S Mansfield Ave",
+            "housenumber": "266",
+            "zipcode": "90036",
+            "state": "CA",
+            "city": "Los Angeles",
+            "coordinates": [
+                12.582563,
+                55.670276
+            ]
+        },
+        "bedrooms": 8,
+        "bathrooms": 8,
+        "year": 1931
+    },
+    "P9": {
+        "type": "Condo",
+        "frontImage": "9.png",
+        "images": [],
+        "price": 8775000,
+        "size": 2652,
+        "location": {
+            "street": "Hudson Yards # 5404",
+            "housenumber": "35",
+            "zipcode": "10001",
+            "state": "NY",
+            "city": "New York",
+            "coordinates": [
+                12.458507,
+                55.656622
+            ]
+        },
+        "bedrooms": 3,
+        "bathrooms": 4,
+        "year": 2019
+    }
+
+}
