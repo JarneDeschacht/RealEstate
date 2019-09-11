@@ -20,8 +20,10 @@
                     "zipcode": "43046",
                     "state": "OH",
                     "city": "Millersport",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 4,
                 "bathrooms": 3,
@@ -39,8 +41,10 @@
                     "zipcode": "43046",
                     "state": "OH",
                     "city": "Millersport",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 2,
                 "bathrooms": 2,
@@ -58,8 +62,10 @@
                     "zipcode": "43046",
                     "state": "OH",
                     "city": "Millersport",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 4,
                 "bathrooms": 4,
@@ -77,8 +83,10 @@
                     "zipcode": "43046",
                     "state": "OH",
                     "city": "Galion",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 6,
                 "bathrooms": 6,
@@ -96,8 +104,10 @@
                     "zipcode": "45840",
                     "state": "OH",
                     "city": "Findlay",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 4,
                 "bathrooms": 6,
@@ -115,8 +125,10 @@
                     "zipcode": "44140",
                     "state": "OH",
                     "city": "Bay Village",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 4,
                 "bathrooms": 4,
@@ -134,8 +146,10 @@
                     "zipcode": "44012",
                     "state": "OH",
                     "city": "Avon Lake",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 4,
                 "bathrooms": 5,
@@ -153,8 +167,10 @@
                     "zipcode": "90036",
                     "state": "CA",
                     "city": "Los Angeles",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 8,
                 "bathrooms": 8,
@@ -172,8 +188,10 @@
                     "zipcode": "10001",
                     "state": "NY",
                     "city": "New York",
-                    "longitude": "",
-                    "latitude": ""
+                    "coordinates": [
+                        0,
+                        0
+                    ]
                 },
                 "bedrooms": 3,
                 "bathrooms": 4,
@@ -209,7 +227,33 @@
         "password": "testtest1",
         "phonenumber": "0492554616",
         "role": "agent",
-        "properties": {}
+        "properties": {
+            "5d78d25d43346": {
+                "type": "Single Family",
+                "frontImage": "5d78d25d43355.jpg",
+                "images": [
+                    "5d78d25d43355.jpg",
+                    "5d78d25d43600.jpg",
+                    "5d78d25d43868.jpg"
+                ],
+                "price": 976500,
+                "size": 1050,
+                "location": {
+                    "street": "Zilverstraat",
+                    "housenumber": "16",
+                    "zipcode": "8480",
+                    "state": "WL",
+                    "city": "Bekegem",
+                    "coordinates": [
+                        51.158409,
+                        3.04165
+                    ]
+                },
+                "bedrooms": 3,
+                "bathrooms": 1,
+                "year": 2000
+            }
+        }
     },
     "5d77cf4c995f2": {
         "id": "5d77cf4c995f2",

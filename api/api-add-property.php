@@ -4,6 +4,23 @@ session_start();
 $sUserId = $_SESSION['jUser']->id;
 $images = [];
 $sUniqueId = uniqid();
+$sStreet = $_POST['txtStreet'];
+$sHouseNumber = $_POST['txtHouseNumber'];
+$sZipcode = $_POST['txtZipCode'];
+$sState = $_POST['txtState'];
+$sCity = $_POST['txtCity'];
+$nLongitude = (float) $_POST['txtLongitude'];
+$nLatitude = (float) $_POST['txtLatitude'];
+$sType = $_POST['txtType'];
+$nPrice = (int) $_POST['txtPrice'];
+$nSize = (int) $_POST['txtSize'];
+$nBedrooms = (int) $_POST['txtBedrooms'];
+$nBathrooms = (int) $_POST['txtBathrooms'];
+$nYear = (int) $_POST['txtYear'];
+
+
+//TODO VALIDATION
+
 
 
 for ($i = 0; $i < count($_FILES['uploadImages']['tmp_name']); $i++) {
@@ -21,24 +38,23 @@ for ($i = 0; $i < count($_FILES['uploadImages']['tmp_name']); $i++) {
 $frontImage = $images[0];
 
 $jLocation = new stdClass();
-$jLocation->street = 'N Bank Rd NE';
-$jLocation->housenumber = "4201";
-$jLocation->zipcode = '43046';
-$jLocation->state = 'OH';
-$jLocation->city = 'Millersport';
-$jLocation->longitude = '';
-$jLocation->latitude = '';
+$jLocation->street = $sStreet;
+$jLocation->housenumber = $sHouseNumber;
+$jLocation->zipcode = $sZipcode;
+$jLocation->state = $sState;
+$jLocation->city = $sCity;
+$jLocation->coordinates = [$nLongitude, $nLatitude];
 
 $jNewProperty = new stdClass();
-$jNewProperty->type = 'Single Family';
+$jNewProperty->type = $sType;
 $jNewProperty->frontImage = $frontImage;
 $jNewProperty->images = $images;
-$jNewProperty->price = 539500;
-$jNewProperty->size = 2838;
+$jNewProperty->price = $nPrice;
+$jNewProperty->size = $nSize;
 $jNewProperty->location = $jLocation;
-$jNewProperty->bedrooms = 7;
-$jNewProperty->bathrooms = 2;
-$jNewProperty->year = 2013;
+$jNewProperty->bedrooms = $nBedrooms;
+$jNewProperty->bathrooms = $nBathrooms;
+$jNewProperty->year = $nYear;
 
 $sjData = file_get_contents(__DIR__ . '/../data.json');
 $jData = json_decode($sjData);
