@@ -44,6 +44,7 @@
                     $jUser = $_SESSION['jUser'];
 
                     if ($jUser->role === 'agent') {
+                        $sClass = $sActive == 'property' ? 'active nav-item' : 'nav-item';
                         echo '
                         <li class="' . $sClass . '">
                             <a class="nav-link" href="add-property">

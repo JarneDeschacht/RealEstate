@@ -89,3 +89,28 @@ $('#btnChangePassword').click(function () {
             }
         })
 })
+
+$('#btnAddProperty').click(function (e) {
+    e.preventDefault();
+    var formData = new FormData(document.getElementById('formAddProperty'));
+
+    $.ajax({
+        url: "api/api-add-property.php",
+        method: "POST",
+        data: formData,
+        cache: false,
+        dataType: 'JSON',
+        contentType: false,
+        processData: false
+    })
+        .done(function (response) {
+            $('#lblErrorsAddProperty').css('font-weight', '900');
+            if (response.status === 1) {
+                window.location.pathname = '/Real-Estate-Project/index';
+            }
+            else {
+                $('#lblErrorsAddProperty').text(response.message);
+                $('#lblErrorsAddProperty').css('color', 'red');
+            }
+        })
+})

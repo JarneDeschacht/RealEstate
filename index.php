@@ -13,14 +13,16 @@ require_once(__DIR__ . '/components/top.php');
         foreach ($jUsers as $jUser) {
             foreach ($jUser->properties as $sKey => $jProperty) {
                 $iAge = date("Y") - $jProperty->year;
+                $jLocation = $jProperty->location;
+                $sAddress = "$jLocation->housenumber $jLocation->street, $jLocation->city, $jLocation->state $jLocation->zipcode";
                 echo '
                     <div id="' . $sKey . '" class="card property">
                         <a class="like" onClick="like(\'' . $sKey . '\')"><i class="far fa-heart fa-2x"></i></a>
-                        <img class="card-img-top" src="images/' . $jProperty->image . '" alt="' . $sKey . '">
+                        <img class="card-img-top" src="images/' . $jProperty->frontImage . '" alt="' . $sKey . '">
                         <div class="card-body">
                             <p class="uppercase-text">' . $jProperty->type . ' &middot ' . $iAge . 'y old &middot ' . $jProperty->size . ' sqft</p>
                             <h1>$ ' . number_format($jProperty->price) . '</h1>
-                            <p class="address-text">' . $jProperty->address . '</p>
+                            <p class="address-text">' . $sAddress . '</p>
                             <hr>
                             <div class="bed-bath">
                                 <div>

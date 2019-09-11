@@ -10,90 +10,171 @@
         "properties": {
             "P1": {
                 "type": "Single family",
-                "image": "1.png",
+                "frontImage": "1.png",
+                "images": [],
                 "price": 548000,
                 "size": 2564,
-                "address": "4201 N Bank Rd NE, Millersport, OH 43046",
+                "location": {
+                    "street": "N Bank Rd NE",
+                    "housenumber": "4201",
+                    "zipcode": "43046",
+                    "state": "OH",
+                    "city": "Millersport",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 4,
                 "bathrooms": 3,
                 "year": 1911
             },
             "P2": {
                 "type": "Single family",
-                "image": "2.png",
+                "frontImage": "2.png",
+                "images": [],
                 "price": 699900,
                 "size": 2072,
-                "address": "3528 Helendora Ave NE, Millersport, OH 43046",
+                "location": {
+                    "street": "Helendora Ave NE",
+                    "housenumber": "3528",
+                    "zipcode": "43046",
+                    "state": "OH",
+                    "city": "Millersport",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 2,
                 "bathrooms": 2,
                 "year": 1929
             },
             "P3": {
                 "type": "Single family",
-                "image": "3.png",
+                "frontImage": "3.png",
+                "images": [],
                 "price": 539500,
                 "size": 2838,
-                "address": "13028 W Bank Dr NE, Millersport, OH 43046",
+                "location": {
+                    "street": "N Bank Rd NE",
+                    "housenumber": "13028",
+                    "zipcode": "43046",
+                    "state": "OH",
+                    "city": "Millersport",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 4,
                 "bathrooms": 4,
                 "year": 2007
             },
             "P4": {
                 "type": "Single family",
-                "image": "4.png",
+                "frontImage": "4.png",
+                "images": [],
                 "price": 2500000,
                 "size": 13679,
-                "address": "4270 State Route 309, Galion, OH 44833",
+                "location": {
+                    "street": "State Route 309",
+                    "housenumber": "4270",
+                    "zipcode": "43046",
+                    "state": "OH",
+                    "city": "Galion",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 6,
                 "bathrooms": 6,
                 "year": 1949
             },
             "P5": {
                 "type": "Single family",
-                "image": "5.png",
+                "frontImage": "5.png",
+                "images": [],
                 "price": 899000,
                 "size": 5977,
-                "address": "208 Pheasant Run Pl, Findlay, OH 45840",
+                "location": {
+                    "street": "Pheasant Run Pl",
+                    "housenumber": "208",
+                    "zipcode": "45840",
+                    "state": "OH",
+                    "city": "Findlay",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 4,
                 "bathrooms": 6,
                 "year": 1999
             },
             "P6": {
                 "type": "Single family",
-                "image": "6.png",
+                "frontImage": "6.png",
+                "images": [],
                 "price": 1150000,
                 "size": 4244,
-                "address": "25642 Lake Rd, Bay Village, OH 44140",
+                "location": {
+                    "street": "Lake Rd",
+                    "housenumber": "25642",
+                    "zipcode": "44140",
+                    "state": "OH",
+                    "city": "Bay Village",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 4,
                 "bathrooms": 4,
                 "year": 2002
             },
             "P7": {
                 "type": "Single family",
-                "image": "7.png",
+                "frontImage": "7.png",
+                "images": [],
                 "price": 895000,
                 "size": 4945,
-                "address": "410 Britannia Pkwy, Avon Lake, OH 44012",
+                "location": {
+                    "street": "Britannia Pkwy",
+                    "housenumber": "410",
+                    "zipcode": "44012",
+                    "state": "OH",
+                    "city": "Avon Lake",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 4,
                 "bathrooms": 5,
                 "year": 1989
             },
             "P8": {
                 "type": "Multi family",
-                "image": "8.png",
+                "frontImage": "8.png",
+                "images": [],
                 "price": 2090000,
                 "size": 5274,
-                "address": "266 S Mansfield Ave, Los Angeles, CA 90036",
+                "location": {
+                    "street": "S Mansfield Ave",
+                    "housenumber": "266",
+                    "zipcode": "90036",
+                    "state": "CA",
+                    "city": "Los Angeles",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 8,
                 "bathrooms": 8,
                 "year": 1931
             },
             "P9": {
                 "type": "Condo",
-                "image": "9.png",
+                "frontImage": "9.png",
+                "images": [],
                 "price": 8775000,
                 "size": 2652,
-                "address": "35 Hudson Yards # 5404, New York, NY 10001",
+                "location": {
+                    "street": "Hudson Yards # 5404",
+                    "housenumber": "35",
+                    "zipcode": "10001",
+                    "state": "NY",
+                    "city": "New York",
+                    "longitude": "",
+                    "latitude": ""
+                },
                 "bedrooms": 3,
                 "bathrooms": 4,
                 "year": 2019
@@ -123,7 +204,7 @@
     "5d77cbc52c5af": {
         "id": "5d77cbc52c5af",
         "firstname": "Jarne",
-        "lastname": "Deschacht",
+        "lastname": "Van Daele",
         "email": "mailtest.kea@gmail.com",
         "password": "testtest1",
         "phonenumber": "0492554616",
