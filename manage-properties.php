@@ -48,8 +48,8 @@ if (!$_SESSION || $_SESSION['jUser']->role == 'user') {
                         <td>' . $jProp->type . '</td>
                         <td>' . number_format($jProp->size) . '</td>
                         <td class="edit-delete">
-                        <i class="fas fa-edit fa-2x"></i>
-                        <i class="fas fa-trash-alt fa-2x" onClick="deleteProperty(\'' . $sKey . '\')"></i>
+                        <a href="update-property?id=' . $sKey . '" style="color:#007bff" class="fas fa-edit fa-2x"></a>
+                        <i class="fas fa-trash-alt fa-2x" style="cursor:pointer" onClick="deleteProperty(\'' . $sKey . '\')"></i>
                         </td>
                     </tr>
                     ';

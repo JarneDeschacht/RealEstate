@@ -136,12 +136,16 @@
             },
             "P7": {
                 "type": "Single family",
-                "frontImage": "7.png",
-                "images": [],
+                "frontImage": "5d7a45540dff2.jpg",
+                "images": [
+                    "5d7a45540dff2.jpg",
+                    "5d7a45540e32b.jpg",
+                    "5d7a45540e50b.jpg"
+                ],
                 "price": 895000,
                 "size": 4945,
                 "location": {
-                    "street": "Britannia Pkwy",
+                    "street": "Britannia Pkwy hahaha",
                     "housenumber": "410",
                     "zipcode": "44012",
                     "state": "OH",
@@ -224,7 +228,7 @@
         "firstname": "Jarne",
         "lastname": "Van Daele",
         "email": "mailtest.kea@gmail.com",
-        "password": "testtest1",
+        "password": "5d79f830a028c",
         "phonenumber": "0492554616",
         "role": "agent",
         "properties": {

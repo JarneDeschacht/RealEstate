@@ -184,9 +184,4 @@ form .form-control:focus {
 .edit-delete i{
   padding:1%;
   color: #007bff !important;
-  transition-duration: .2s;
-}
-.edit-delete i:hover{
-  transition-duration: .5s;
-  color: black !important;
 }

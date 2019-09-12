@@ -61,7 +61,7 @@ require_once(__DIR__ . '/components/top.php');
     });
     map.addControl(new mapboxgl.NavigationControl());
 
-    const sjUsers = '<?php echo json_encode($jUsers); ?>'
+    const sjUsers = '<?= json_encode($jUsers); ?>'
     ajUsers = JSON.parse(sjUsers);
 
     for (let userKey in ajUsers) {

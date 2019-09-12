@@ -119,6 +119,30 @@ $('#btnAddProperty').click(function (e) {
             }
         })
 })
+$('#btnUpdateProperty').click(function (e) {
+    e.preventDefault();
+    var formData = new FormData(document.getElementById('formUpdateProperty'));
+
+    $.ajax({
+        url: "api/api-update-property.php",
+        method: "POST",
+        data: formData,
+        cache: false,
+        dataType: 'JSON',
+        contentType: false,
+        processData: false
+    })
+        .done(function (response) {
+            $('#lblErrorsUpdateProperty').css('font-weight', '900');
+            if (response.status === 1) {
+                window.location.pathname = '/Real-Estate-Project/manage-properties';
+            }
+            else {
+                $('#lblErrorsUpdateProperty').text(response.message);
+                $('#lblErrorsUpdateProperty').css('color', 'red');
+            }
+        })
+})
 
 function deleteProperty(key) {
     $.ajax({
