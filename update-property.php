@@ -1,6 +1,7 @@
 <?php
 $sPageTitle = 'Manage Properties';
 $sActive = 'account';
+$search = '';
 require_once(__DIR__ . '/components/top.php');
 
 session_start();

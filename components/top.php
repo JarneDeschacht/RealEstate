@@ -31,6 +31,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
             <ul class="navbar-nav ml-auto">
+                <?= $search ?>
                 <li class="<?= $sActive == 'search' ? 'active nav-item' : 'nav-item'; ?>">
                     <a class="nav-link" href="index">
                         <i class="fas fa-search"></i>Search Property

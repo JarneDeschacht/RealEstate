@@ -1,6 +1,7 @@
 <?php
 $sPageTitle = 'Search Properties';
 $sActive = 'search';
+$search = '<input type="text" name="txtSearch" id="txtSearch" placeholder="Type Keywords">';
 require_once(__DIR__ . '/components/top.php');
 ?>
 

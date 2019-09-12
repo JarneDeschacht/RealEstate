@@ -157,3 +157,19 @@ function deleteProperty(key) {
             }
         })
 }
+
+$('#txtSearch').on('input', function () {
+    let val = $('#txtSearch').val();
+    $.ajax({
+        url: "api/api-search.php",
+        method: "GET",
+        data: { "search": val },
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            $('.property').hide();
+            for (let key of response) {
+                $('#Right' + key).show();
+            }
+        })
+});

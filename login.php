@@ -1,6 +1,7 @@
 <?php
 $sPageTitle = 'Login';
 $sActive = 'login';
+$search = '';
 require_once(__DIR__ . '/components/top.php');
 
 session_start();
