@@ -1,7 +1,7 @@
 <?php
 $sPageTitle = 'Search Properties';
 $sActive = 'search';
-$search = '<input type="text" name="txtSearch" id="txtSearch" placeholder="Type Keywords">';
+$search = '<input type="text" name="txtSearch" id="txtSearch" placeholder="Search">';
 require_once(__DIR__ . '/components/top.php');
 ?>
 
@@ -70,7 +70,7 @@ require_once(__DIR__ . '/components/top.php');
         for (let propKey in ajUserProperties) {
             let coordinates = ajUserProperties[propKey].location.coordinates;
             var el = document.createElement('i');
-            el.className = 'fas fa-map-marker fa-3x smoothScroll';
+            el.className = 'fas fa-map-marker fa-3x';
             el.style.color = '#ff3547';
             el.id = propKey;
             el.addEventListener('click', function() {

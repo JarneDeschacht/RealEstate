@@ -17,6 +17,36 @@ $('#btnSendEmail').click(function () {
     window.location = '/Real-Estate-Project/api/api-send-email?email=' + email;
 })
 
+function deleteProperty(key) {
+    $.ajax({
+        url: "api/api-delete-property.php",
+        method: "GET",
+        data: { "id": key },
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            if (response.status === 1) {
+                $('#' + key).remove();
+            }
+        })
+}
+
+$('#txtSearch').on('input', function () {
+    let val = $('#txtSearch').val();
+    $.ajax({
+        url: "api/api-search.php",
+        method: "GET",
+        data: { "search": val },
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            $('.property').hide();
+            for (let key of response) {
+                $('#Right' + key).show();
+            }
+        })
+});
+
 $('#btnLogin').click(function () {
     $.ajax({
         url: "api/api-login.php",
@@ -109,11 +139,12 @@ $('#btnAddProperty').click(function (e) {
         processData: false
     })
         .done(function (response) {
-            $('#lblErrorsAddProperty').css('font-weight', '900');
+
             if (response.status === 1) {
                 window.location.pathname = '/Real-Estate-Project/index';
             }
             else {
+                $('#lblErrorsAddProperty').css('font-weight', '900');
                 $('#lblErrorsAddProperty').text(response.message);
                 $('#lblErrorsAddProperty').css('color', 'red');
             }
@@ -133,43 +164,15 @@ $('#btnUpdateProperty').click(function (e) {
         processData: false
     })
         .done(function (response) {
-            $('#lblErrorsUpdateProperty').css('font-weight', '900');
+
             if (response.status === 1) {
                 window.location.pathname = '/Real-Estate-Project/manage-properties';
             }
             else {
+                $('#lblErrorsUpdateProperty').css('font-weight', '900');
                 $('#lblErrorsUpdateProperty').text(response.message);
                 $('#lblErrorsUpdateProperty').css('color', 'red');
             }
         })
 })
 
-function deleteProperty(key) {
-    $.ajax({
-        url: "api/api-delete-property.php",
-        method: "GET",
-        data: { "id": key },
-        dataType: "JSON"
-    })
-        .done(function (response) {
-            if (response.status === 1) {
-                $('#' + key).remove();
-            }
-        })
-}
-
-$('#txtSearch').on('input', function () {
-    let val = $('#txtSearch').val();
-    $.ajax({
-        url: "api/api-search.php",
-        method: "GET",
-        data: { "search": val },
-        dataType: "JSON"
-    })
-        .done(function (response) {
-            $('.property').hide();
-            for (let key of response) {
-                $('#Right' + key).show();
-            }
-        })
-});

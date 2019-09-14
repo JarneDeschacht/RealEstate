@@ -19,9 +19,6 @@ if ($_GET['search'] == null) {
 }
 
 $sSearchFor = strtolower($_GET['search']);
-$sjData = file_get_contents(__DIR__ . '/../data.json');
-$jData = json_decode($sjData);
-$matches = [];
 
 foreach ($jData as $jUser) {
     foreach ($jUser->properties as $sKey => $jProperty) {

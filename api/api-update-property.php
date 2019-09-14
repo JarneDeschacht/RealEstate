@@ -18,8 +18,46 @@ $nBathrooms = (int) $_POST['txtBathrooms'];
 $nYear = (int) $_POST['txtYear'];
 $sPropId = $_POST['id'];
 
+if (empty($sStreet)) {
+    sendErrorMessage('Street is missing', __LINE__);
+}
+if (empty($sHouseNumber)) {
+    sendErrorMessage('House number is missing', __LINE__);
+}
+if (empty($sZipcode)) {
+    sendErrorMessage('Zipcode is missing', __LINE__);
+}
+if (empty($sState)) {
+    sendErrorMessage('State is missing', __LINE__);
+}
+if (empty($sCity)) {
+    sendErrorMessage('City is missing', __LINE__);
+}
+if (empty($nLongitude)) {
+    sendErrorMessage('Longitude is missing', __LINE__);
+}
+if (empty($nLatitude)) {
+    sendErrorMessage('Latitude is missing', __LINE__);
+}
+if (empty($sType)) {
+    sendErrorMessage('Type is missing', __LINE__);
+}
+if (empty($nPrice)) {
+    sendErrorMessage('Price is missing', __LINE__);
+}
+if (empty($nSize)) {
+    sendErrorMessage('Size is missing', __LINE__);
+}
+if (empty($nBedrooms)) {
+    sendErrorMessage('Bedrooms is missing', __LINE__);
+}
+if (empty($nBathrooms)) {
+    sendErrorMessage('Bathrooms is missing', __LINE__);
+}
+if (empty($nYear)) {
+    sendErrorMessage('Year build is missing', __LINE__);
+}
 
-//TODO VALIDATION
 
 
 
