@@ -22,7 +22,13 @@ require_once(__DIR__ . '/components/top.php');
                 $sAddress = "$jLocation->housenumber $jLocation->street, $jLocation->city, $jLocation->state $jLocation->zipcode";
                 $sLike = '';
                 if ($_SESSION) {
-                    $sLike = $_SESSION['jUser']->role == 'user' ? '<a class="like" onClick="like(\'' . $sKey . '\')"><i class="far fa-heart fa-2x"></i></a>' : '';
+                    if ($_SESSION['jUser']->role == 'user') {
+                        if (in_array($_SESSION['jUser']->id, $jProperty->likes)) {
+                            $sLike = '<a class="like opacity" onClick="likeDislike(\'' . $sKey . '\')"><i class="fas fa-heart fa-2x"></i></a>';
+                        } else {
+                            $sLike = '<a class="like" onClick="likeDislike(\'' . $sKey . '\')"><i class="far fa-heart fa-2x"></i></a>';
+                        }
+                    }
                 }
                 echo '
                     <div id="Right' . $sKey . '" class="card property">

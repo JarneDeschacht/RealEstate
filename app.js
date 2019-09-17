@@ -3,10 +3,23 @@ $(document).ready(function () {
     $('.dataTables_length').addClass('bs-select');
 });
 
-function like(key) {
-    $('#Right' + key).children().first().children().first().toggleClass('fas');
-    $('#Right' + key).children().first().toggleClass('opacity');
+function likeDislike(key) {
+    $.ajax({
+        url: 'api/api-like-dislike.php',
+        method: 'GET',
+        data: { propId: key }
+    }).done((response) => {
+        $('#Right' + key).children().first().toggleClass('opacity');
+        if (response == '0') {
+            $('#Right' + key).children().first().children().first().toggleClass('fas');
+        }
+        else {
+            $('#Right' + key).children().first().children().first().toggleClass('fas');
+            $('#Right' + key).children().first().children().first().addClass('far');
+        }
+    })
 }
+
 function resetLabels() {
     $('#lblErrorsEditProfile').text('');
     $('#lblErrorsChangePassword').text('');
@@ -41,12 +54,31 @@ $('#txtSearch').on('input', function () {
     })
         .done(function (response) {
             $('.property').hide();
+            $('.fa-map-marker').hide();
             for (let key of response) {
                 $('#Right' + key).show();
+                $('#' + key).show();
             }
         })
 });
 
+$('#LikedProperties').click(function () {
+    if (window.location.pathname !== '/Real-Estate-Project/index') {
+        window.location.pathname = '/Real-Estate-Project/index';
+    }
+    $.ajax({
+        url: "api/api-liked-properties.php",
+        dataType: "JSON"
+    })
+        .done(function (response) {
+            $('.property').hide();
+            $('.fa-map-marker').hide();
+            for (let key of response) {
+                $('#Right' + key).show();
+                $('#' + key).show();
+            }
+        });
+});
 $('#btnLogin').click(function () {
     $.ajax({
         url: "api/api-login.php",

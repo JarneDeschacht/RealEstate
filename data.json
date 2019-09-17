@@ -31,7 +31,8 @@
                 "bathrooms": 3,
                 "year": 1911,
                 "likes": [
-                    "U2"
+                    "U2",
+                    "5d80ba973bf76"
                 ]
             },
             "P2": {
@@ -54,7 +55,9 @@
                 "bedrooms": 2,
                 "bathrooms": 2,
                 "year": 1929,
-                "likes": []
+                "likes": [
+                    "5d80ba973bf76"
+                ]
             },
             "P3": {
                 "type": "Single family",
@@ -76,7 +79,9 @@
                 "bedrooms": 4,
                 "bathrooms": 4,
                 "year": 2007,
-                "likes": []
+                "likes": [
+                    "5d80ba973bf76"
+                ]
             },
             "P4": {
                 "type": "Single family",
@@ -98,7 +103,9 @@
                 "bedrooms": 6,
                 "bathrooms": 6,
                 "year": 1949,
-                "likes": []
+                "likes": [
+                    "5d80ba973bf76"
+                ]
             },
             "P5": {
                 "type": "Single family",
@@ -120,7 +127,9 @@
                 "bedrooms": 4,
                 "bathrooms": 6,
                 "year": 1999,
-                "likes": []
+                "likes": [
+                    "5d80ba973bf76"
+                ]
             },
             "P6": {
                 "type": "Single family",
@@ -168,7 +177,9 @@
                 "bedrooms": 4,
                 "bathrooms": 5,
                 "year": 1989,
-                "likes": []
+                "likes": [
+                    "5d80ba973bf76"
+                ]
             },
             "P8": {
                 "type": "Multi family",
@@ -190,7 +201,9 @@
                 "bedrooms": 8,
                 "bathrooms": 8,
                 "year": 1931,
-                "likes": []
+                "likes": [
+                    "5d80ba973bf76"
+                ]
             },
             "P9": {
                 "type": "Condo",
@@ -241,7 +254,7 @@
         "firstname": "Jarne",
         "lastname": "Van Daele",
         "email": "mailtest.kea@gmail.com",
-        "password": "5d80bdac33a86",
+        "password": "testtest1",
         "phonenumber": "0492554616",
         "role": "agent",
         "properties": {

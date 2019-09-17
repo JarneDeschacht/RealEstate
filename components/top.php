@@ -57,6 +57,12 @@
                                 <i class="fas fa-plus"></i>Add Property
                             </a>
                         </li>';
+                    } else {
+                        echo '<li class="nav-item">
+                                <a class="nav-link" id="LikedProperties">
+                                    <i class="fas fa-heart"></i>My liked Properties
+                                </a>
+                            </li>';
                     }
 
                     $sClass = $sActive == 'account' ? 'active nav-item' : 'nav-item';
