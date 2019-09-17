@@ -185,3 +185,23 @@ form .form-control:focus {
   padding:1%;
   color: #007bff !important;
 }
+
+@media(max-width:900px){
+  #map{
+    display: none;
+  }
+  #map_properties{
+    grid-template-columns: 1fr;
+  }
+  form{
+    width: 80%;
+  }
+}
+@media(max-width: 500px){
+  #properties{
+    grid-template-columns: 1fr;
+  }
+  form{
+    width: 90%;
+  }
+}

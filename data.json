@@ -293,5 +293,15 @@
         "phonenumber": "a",
         "role": "user",
         "properties": {}
+    },
+    "5d80ba973bf76": {
+        "id": "5d80ba973bf76",
+        "firstname": "test",
+        "lastname": "test",
+        "email": "test.test@test.test",
+        "password": "testtest1",
+        "phonenumber": "121",
+        "role": "user",
+        "properties": {}
     }
 }

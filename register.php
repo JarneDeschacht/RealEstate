@@ -13,13 +13,13 @@ if ($_SESSION)
     <form id="formRegister" class="text-center border border-light p-5" method="POST">
         <h1 class="mb-4">Sign up</h1>
         <div class="form-row">
-            <div class="col">
+            <div class="col-lg-6">
                 <div class="md-form">
                     <input type="text" id="txtFirstname" class="form-control" name="txtFirstname">
                     <label for="txtFirstname">First name</label>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-6">
                 <div class="md-form">
                     <input type="text" id="txtLastname" class="form-control" name="txtLastname">
                     <label for="txtLastname">Last name</label>
@@ -35,7 +35,7 @@ if ($_SESSION)
             <label for="txtPhone">Phone number</label>
         </div>
         <div class="form-row">
-            <div class="col">
+            <div class="col-lg-6">
                 <div class="md-form">
                     <input type="password" id="txtPassword" name="txtPassword" class="form-control">
                     <label for="txtPassword">Password</label>
@@ -44,7 +44,7 @@ if ($_SESSION)
                     </small>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-lg-6">
                 <div class="md-form">
                     <input type="password" id="txtPasswordConfirm" name="txtPasswordConfirm" class="form-control">
                     <label for="txtPasswordConfirm">Password Confirm</label>

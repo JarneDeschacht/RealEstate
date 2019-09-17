@@ -11,6 +11,7 @@ require_once(__DIR__ . '/components/top.php');
     </div>
     <div id="properties">
         <?php
+
         $sjUsers = file_get_contents(__DIR__ . '/data.json');
         $jUsers = json_decode($sjUsers);
 
@@ -19,9 +20,13 @@ require_once(__DIR__ . '/components/top.php');
                 $iAge = date("Y") - $jProperty->year;
                 $jLocation = $jProperty->location;
                 $sAddress = "$jLocation->housenumber $jLocation->street, $jLocation->city, $jLocation->state $jLocation->zipcode";
+                $sLike = '';
+                if ($_SESSION) {
+                    $sLike = $_SESSION['jUser']->role == 'user' ? '<a class="like" onClick="like(\'' . $sKey . '\')"><i class="far fa-heart fa-2x"></i></a>' : '';
+                }
                 echo '
                     <div id="Right' . $sKey . '" class="card property">
-                        <a class="like" onClick="like(\'' . $sKey . '\')"><i class="far fa-heart fa-2x"></i></a>
+                        ' . $sLike . '
                         <img class="card-img-top" src="images/' . $jProperty->frontImage . '" alt="' . $sKey . '">
                         <div class="card-body">
                             <p class="uppercase-text">' . $jProperty->type . ' &middot ' . $iAge . 'y old &middot ' . $jProperty->size . ' sqft</p>
