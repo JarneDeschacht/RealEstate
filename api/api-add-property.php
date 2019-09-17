@@ -58,8 +58,8 @@ if (empty($nBathrooms)) {
 if (empty($nYear)) {
     sendErrorMessage('Year build is missing', __LINE__);
 }
-if ($_FILES['uploadImages']['error'] == UPLOAD_ERR_NO_FILE) {
-    sendErrorMessage('please add at least 1 image', __LINE__);
+if (empty($_FILES['uploadImages']) || $_FILES['uploadImages']['name'][0] == '') {
+    sendErrorMessage('Please upload at least one image', __LINE__);
 }
 
 for ($i = 0; $i < count($_FILES['uploadImages']['tmp_name']); $i++) {
@@ -94,6 +94,7 @@ $jNewProperty->location = $jLocation;
 $jNewProperty->bedrooms = $nBedrooms;
 $jNewProperty->bathrooms = $nBathrooms;
 $jNewProperty->year = $nYear;
+$jNewProperty->likes = [];
 
 $sjData = file_get_contents(__DIR__ . '/../data.json');
 $jData = json_decode($sjData);

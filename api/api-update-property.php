@@ -57,6 +57,9 @@ if (empty($nBathrooms)) {
 if (empty($nYear)) {
     sendErrorMessage('Year build is missing', __LINE__);
 }
+if (empty($_FILES['uploadImages']) || $_FILES['uploadImages']['name'][0] == '') {
+    sendErrorMessage('Please upload at least one image', __LINE__);
+}
 
 
 
@@ -72,6 +75,9 @@ for ($i = 0; $i < count($_FILES['uploadImages']['tmp_name']); $i++) {
         __DIR__ . "/../images/$sUniqueImageName"
     );
 }
+
+$sjData = file_get_contents(__DIR__ . '/../data.json');
+$jData = json_decode($sjData);
 
 $frontImage = $images[0];
 
@@ -93,9 +99,7 @@ $jProperty->location = $jLocation;
 $jProperty->bedrooms = $nBedrooms;
 $jProperty->bathrooms = $nBathrooms;
 $jProperty->year = $nYear;
-
-$sjData = file_get_contents(__DIR__ . '/../data.json');
-$jData = json_decode($sjData);
+$jProperty->likes = $jData->$sUserId->properties->$sPropId->likes;
 
 $jData->$sUserId->properties->$sPropId = $jProperty;
 
@@ -108,3 +112,13 @@ echo '{
     "message": "Property updates succesfully"
 }';
 exit;
+
+function sendErrorMessage($sMessage,  $iLine)
+{
+    echo '{
+        "status": 0,
+        "message": "' . $sMessage . '",
+        "line": ' . $iLine . '
+    }';
+    exit;
+}

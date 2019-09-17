@@ -164,7 +164,6 @@ $('#btnUpdateProperty').click(function (e) {
         processData: false
     })
         .done(function (response) {
-
             if (response.status === 1) {
                 window.location.pathname = '/Real-Estate-Project/manage-properties';
             }

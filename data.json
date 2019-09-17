@@ -10,9 +10,11 @@
         "properties": {
             "P1": {
                 "type": "Single family",
-                "frontImage": "1.png",
-                "images": [],
-                "price": 548000,
+                "frontImage": "5d80bff7e5b8f.png",
+                "images": [
+                    "5d80bff7e5b8f.png"
+                ],
+                "price": 548001,
                 "size": 2564,
                 "location": {
                     "street": "N Bank Rd NE",
@@ -27,7 +29,10 @@
                 },
                 "bedrooms": 4,
                 "bathrooms": 3,
-                "year": 1911
+                "year": 1911,
+                "likes": [
+                    "U2"
+                ]
             },
             "P2": {
                 "type": "Single family",
@@ -48,7 +53,8 @@
                 },
                 "bedrooms": 2,
                 "bathrooms": 2,
-                "year": 1929
+                "year": 1929,
+                "likes": []
             },
             "P3": {
                 "type": "Single family",
@@ -69,7 +75,8 @@
                 },
                 "bedrooms": 4,
                 "bathrooms": 4,
-                "year": 2007
+                "year": 2007,
+                "likes": []
             },
             "P4": {
                 "type": "Single family",
@@ -90,7 +97,8 @@
                 },
                 "bedrooms": 6,
                 "bathrooms": 6,
-                "year": 1949
+                "year": 1949,
+                "likes": []
             },
             "P5": {
                 "type": "Single family",
@@ -111,7 +119,8 @@
                 },
                 "bedrooms": 4,
                 "bathrooms": 6,
-                "year": 1999
+                "year": 1999,
+                "likes": []
             },
             "P6": {
                 "type": "Single family",
@@ -132,7 +141,8 @@
                 },
                 "bedrooms": 4,
                 "bathrooms": 4,
-                "year": 2002
+                "year": 2002,
+                "likes": []
             },
             "P7": {
                 "type": "Single family",
@@ -157,7 +167,8 @@
                 },
                 "bedrooms": 4,
                 "bathrooms": 5,
-                "year": 1989
+                "year": 1989,
+                "likes": []
             },
             "P8": {
                 "type": "Multi family",
@@ -178,7 +189,8 @@
                 },
                 "bedrooms": 8,
                 "bathrooms": 8,
-                "year": 1931
+                "year": 1931,
+                "likes": []
             },
             "P9": {
                 "type": "Condo",
@@ -199,7 +211,8 @@
                 },
                 "bedrooms": 3,
                 "bathrooms": 4,
-                "year": 2019
+                "year": 2019,
+                "likes": []
             }
         }
     },
@@ -228,7 +241,7 @@
         "firstname": "Jarne",
         "lastname": "Van Daele",
         "email": "mailtest.kea@gmail.com",
-        "password": "5d79f830a028c",
+        "password": "5d80bdac33a86",
         "phonenumber": "0492554616",
         "role": "agent",
         "properties": {
@@ -255,7 +268,8 @@
                 },
                 "bedrooms": 3,
                 "bathrooms": 1,
-                "year": 2000
+                "year": 2000,
+                "likes": []
             },
             "5d792293f2b52": {
                 "type": "ede",
@@ -280,7 +294,8 @@
                 },
                 "bedrooms": 3,
                 "bathrooms": 3,
-                "year": 4
+                "year": 4,
+                "likes": []
             }
         }
     },
